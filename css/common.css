@@ -52,3 +52,8 @@
 .title a span {
     font-size: 14px;
 }
+
+.slick-dots,
+.slick-arrow{
+    cursor: pointer;
+}
