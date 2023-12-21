@@ -5,31 +5,50 @@
     height: 1px;
     margin: -1px;
     text-indent: 100%;
-     white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
 }
 
-.default{
-    display: flex;
-    gap: 30px;
+.sec {
+    padding: 100px 0;
+}
 
+.con {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 100px 15px;
-}
-/* .default>*{
-    flex: 3;
-} */
-.left{
-    max-width: 870px;
-    width: 100%;
+    padding: 0 15px;
 }
 
-.title{
+.left {
+    max-width: 870px;
+}
+
+.right {
+    max-width: 270px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 0 24px 0;
 }
 
-.title h2{
-    margin-top: -24px;
+.title h2 {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.title h2 a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ddd;
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+.title a span {
+    font-size: 14px;
 }

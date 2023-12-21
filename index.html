@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,15 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/custom.js"></script>
+    <script src="./js/jquery-1.12.4.min.js" defer></script>
+    <script src="./js/slick.min.js" defer></script>
+    <script src="./js/custom.js" defer></script>
 </head>
+
 <body>
     <div class="wrap">
         <header class="header">
-            <div class="header_wrap">
+            <div class="header_wrap con">
                 <h1>
                     <a href="">
                         <img src="./images/logo.png" alt="">
@@ -33,40 +35,47 @@
                     </ul>
                 </nav>
                 <div class="util">
-                    <ul class="member">
+                    <ul>
                         <li><a href="">로그인</a></li>
                         <li><a href="">회원가입</a></li>
                     </ul>
-                    <span class="material-symbols-outlined">menu</span>
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
                 </div>
             </div>
         </header>
-        <main class="main">
-            <div class="main_visual default">
+        <div class="main_visual sec">
+            <div class="visual_wrap con">
                 <section class="visual_left left">
-                    <div class="title">
-                        <h2 class="blind">visual_slide</h2>
+                    <div class="title blind">
+                        <h2>visual_slide</h2>
                     </div>
                     <div class="visual_slide">
-                        <div class="itm itm01">
-                            <div class="txt_box">
-                                <strong>다이렉트 장기렌터가</strong>
-                                <p>로켓 출고! 하나캐피탈 장기렌터카
-                                    <br/>부담은 ,편리함은 늘리고</p>
+                        <div class="visual_slide_box">
+                            <div class="itm itm01">
+                                <div class="txt_box">
+                                    <strong>다이렉트 장기렌터가</strong>
+                                    <p>로켓 출고! 하나캐피탈 장기렌터카
+                                        <br />부담은 ,편리함은 늘리고
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="itm itm02">
-                            <div class="txt_box">
-                                <strong>다이렉트 장기렌터가</strong>
-                                <p>로켓 출고! 하나캐피탈 장기렌터카
-                                    <br/>부담은 ,편리함은 늘리고</p>
+                            <div class="itm itm02">
+                                <div class="txt_box">
+                                    <strong>원큐자동차담보대출</strong>
+                                    <p>고객님의 소유자동차(승용,RV,승합)를
+                                        <br />담보로 대출을 해드리는 금융서비스!
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="itm itm03">
-                             <div class="txt_box">
-                                <strong>다이렉트 장기렌터가</strong>
-                                <p>로켓 출고! 하나캐피탈 장기렌터카
-                                    <br/>부담은 ,편리함은 늘리고</p>
+                            <div class="itm itm03">
+                                <div class="txt_box">
+                                    <strong>중고차 오토론</strong>
+                                    <p>똑똑한 중고차 구매방법!
+                                        <br />쉽고 빠르고 저렴한 다이렉트 중고차 금융
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -78,34 +87,50 @@
                         </ul>
                     </div>
                 </section>
-                <section class="visual_right">
-                    <div class="title">
-                        <h2 class="blind">visual_login</h2>
+                <section class="visual_right right">
+                    <div class="title blind">
+                        <h2>visual_login</h2>
                     </div>
-                    <ul class="teb_menu">
-                        <li><a href="">로그인</a></li>
-                        <li><a href="">공인인증서</a></li>
-                    </ul>
+                    <div class="visual_right_wrap">
+                        <ul>
+                            <li><a href="">로그인</a></li>
+                            <li><a href="">공인인증서</a></li>
+                        </ul>
+                        <div class="login_box">
+                            <form action="f" id="login">
+                                <input type="text" placeholder="아이디">
+                                <input type="text" placeholder="비밀번호">
+                            </form>
+                            <button class="btn">로그인</button>
+                            <ul>
+                                <li><a href="">아이디찾기</a></li>
+                                <li><a href="">비밀번호찾기</a></li>
+                                <li><a href="">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
             </div>
-            <div class="main_car default">
+        </div>
+        <div class="main_car sec">
+            <div class="car_wrap con">
                 <section class="car_left">
-                    <div class="title">
-                        <h2 class="blind">visual_slide</h2>
+                    <div class="title blind">
+                        <h2>visual_slide</h2>
                     </div>
                     <div class="car_lent">
                         <div class="itm itm01">
                             <div class="txt_box">
                                 <strong>오토리스/렌터카
                                     <br />견적조회</strong>
-                                    <p>지금바로 견적 확인 하기</p>
+                                <a class="btn">지금바로 견적 확인 하기</a>
                             </div>
                         </div>
                         <div class="itm itm02">
                             <div class="txt_box">
-                                <strong>오토리스/렌터카
-                                    <br />견적조회</strong>
-                                    <p>지금바로 견적 확인 하기</p>
+                                <strong>중고차 오토론
+                                    <br />자금 대출</strong>
+                                <a class="btn">스마트한 중고차 구입</a>
                             </div>
                         </div>
                     </div>
@@ -113,21 +138,227 @@
                 <section class="car_right">
                     <div class="title">
                         <h2>렌터카 중고 핫딜</h2>
+                        <a href="">
+                            <span>전체보기</span>
+                            <span class="material-symbols-outlined">add</span>
+                        </a>
+                    </div>
+                    <div class="car_right_slide">
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_car02-1.png" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <strong>제네시스</strong>
+                                <span>G80</span>
+                            </div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_car02-2.png" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <strong>쉐보레</strong>
+                                <span>트렉스</span>
+                            </div>
+                        </div>
+                        <div class="itm">
+                            <div class="img_box">
+                                <img src="./images/main_car02-3.png" alt="">
+                            </div>
+                            <div class="txt_box">
+                                <strong>기아</strong>
+                                <span>스팅어</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div class="main_personal sec">
+            <div class="personal_wrap con">
+                <section class="personal_left left">
+                    <div class="title">
+                        <h2>개인대출</h2>
+                    </div>
+                    <div class="personal_left_wrap">
+                        <div class="itm">
+                            <div class="txt_box">
+                                <span class="material-symbols-outlined">
+                                    savings
+                                </span>
+                                <strong>e하나 신용대출</strong>
+                                <p>소득이 있다면<br />
+                                    쉽고 빠른 신용대출</p>
+                                <a href="">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="itm itm02">
+                            <div class="txt_box">
+                                <span class="material-symbols-outlined">
+                                    apartment
+                                </span>
+                                <strong>행복아파트론</strong>
+                                <p>아파트소유자를 위한<br />
+                                    무담보 아파트 대출</p>
+                                <a href="">바로가기</a>
+                            </div>
+                        </div>
+                        <div class="itm itm03">
+                            <div class="txt_box">
+                                <span class="material-symbols-outlined">
+                                    diamond
+                                </span>
+                                <strong>우수고객추가대출</strong>
+                                <p>중도상환수수료없는<br />
+                                    쉽고 빠른 신용대출</p>
+                                <a href="">바로가기</a>
+                            </div>
+                        </div>
+                </section>
+                <section class="personal_right right">
+                    <div class="title">
+                        <h2>의료기/실비</h2>
+                    </div>
+                    <div class="personal_right_wrap">
+                        <div class="itm_box">
+                            <div class="itm">
+                                <strong>일반리스</strong>
+                                <p>의료장비, 스크린골프<br />
+                                    설비 등</p>
+                            </div>
+                            <div class="itm">
+                                <strong>일반할부</strong>
+                                <p>의료장비, 의료소모품<br />
+                                    설비 등</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
-            <div class="main_personal default">
-                <section class="personal_left"></section>
-                <section class="personal_right"></section>
+        </div>
+        <div class="main_event sec">
+            <div class="event_wrap con">
+                <section class="event_left">
+                    <div class="title">
+                        <h2>이벤트</h2>
+                    </div>
+                    <div class="event_left_wrap">
+                        <div class="event_itm">
+                            <div class="itm">
+                                <div class="txt_box">
+                                    <strong>하나캐피탈 맴버십</strong>
+                                    <p>맴버십 회원님만을 위한<br />
+                                        다양한 서비스 혜택!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event_slide">
+                            <div class="itm itm01">
+                                <div class="txt_box">
+                                    <strong>현대법인카드</strong>
+                                    <p>카드 디자인 선택이<br />
+                                        가능한 법인카드</p>
+                                </div>
+                            </div>
+                            <div class="itm itm02">
+                                <div class="txt_box">
+                                    <strong>롯데카드 추천카드</strong>
+                                    <p>롯데카드 추천 인기카드<br />
+                                        연회비 100%캐시백</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="event_right">
+                    <section class="event_right_top">
+                        <div class="title">
+                            <h2>공지사항</h2>
+                            <a href="">
+                                <span>전체보기</span>
+                                <span class="material-symbols-outlined">add</span>
+                            </a>
+                        </div>
+                        <div class="event_right_top_wrap">
+                            <div class="itm">
+                                <p>채권양도 관련 개인(신용)정보 제공사실 공지</p>
+                                <span>2023-11-30</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="event_right_bottom">
+                        <div class="title">
+                            <h2>고객센터</h2>
+                            <a href="">
+                                <span>전체보기</span>
+                                <span class="material-symbols-outlined">add</span>
+                            </a>
+                        </div>
+                        <div class="event_right_bottom_wrap">
+                            <div class="itm">
+                                <span class="material-symbols-outlined">
+                                    post_add
+                                </span>
+                                <div class="txt_box">
+                                    <strong>전자민원접수</strong>
+                                    <p>불편했던 점을 말해주세요<br />
+                                        신속히 개선하도록 하겠습니다.</p>
+                                </div>
+                            </div>
+                            <div class="itm">
+                                <span class="material-symbols-outlined">
+                                    verified_user
+                                </span>
+                                <div class="txt_box">
+                                    <strong>금융소비자보호</strong>
+                                    <p>금융소비자보호의 권익 보호를 위해<br />
+                                        노력하겠습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-            <div class="main_event">
-                <section class="event_left"></section>
-                <section class="event_right"></section>
-            </div>
+        </div>
         </main>
         <footer class="footer">
-
+            <div class="footer_top con">
+                <div class="footer_top_wrap">
+                    <ul>
+                        <li><a href=""><strong>고객센터 1800-1110</strong> (업무시간 09:00 ~ 18:00)</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">지점안내</a></li>
+                        <li><a href="">하나캐피탈 멤버십</a></li>
+                        <li><a href="">ENGLISH</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_wrap con">
+                    <ul class="top">
+                        <li><a href="">여신거래기본약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">전자금융거래약관</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">고객정보취급방침</a></li>
+                        <li><a href="">고객정보조회 동의 확인</a></li>
+                        <li><a href="">채권추심업무처리절차</a></li>
+                        <li><a href="">홈페이지이용안내</a></li>
+                    </ul>
+                    <ul class="bottom">
+                        <li><a href="">소멸시효 완성채권 추심 관련 금융소비자 유의사항</a></li>
+                        <li><a href="">영상정보처리기기 운영·관리방침</a></li>
+                        <li><a href="">그룹사간 고객정보 제공내역 조회</a></li>
+                    </ul>
+                    <p>서울 강남구 테헤란로 127 하나금융그룹 (역삼동, 강남사옥) 사업자등록번호 220-81-09337</p>
+                    ⓒ2023. HANA CAPITAL CO., LTD. All right reserved.
+                </div>
+            </div>
         </footer>
     </div>
 </body>
+
 </html>
