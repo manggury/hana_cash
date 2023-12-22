@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid tomato--;
+    outline: 1px solid tomato;
 }
 
 .header {
@@ -430,7 +430,6 @@ h1 {
 .car_right_slide .slick-arrow {
     position: absolute;
     top: 50%;
-    left: 50%;
     z-index: 999;
 
     border: none;
@@ -449,7 +448,7 @@ h1 {
 }
 
 .car_right_slide .slick-next {
-    right: -100px;
+    right: 0;
 }
 
 .car_right_slide .slick-next::after {
