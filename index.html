@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>하나캐피탈</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/slick.css">
@@ -92,21 +92,47 @@
                         <h2>visual_login</h2>
                     </div>
                     <div class="visual_right_wrap">
-                        <ul>
-                            <li><a href="">로그인</a></li>
+                        <ul class="tab_tit">
+                            <li class="on"><a href="">로그인</a></li>
                             <li><a href="">공인인증서</a></li>
                         </ul>
-                        <div class="login_box">
-                            <form action="f" id="login">
-                                <input type="text" placeholder="아이디">
-                                <input type="text" placeholder="비밀번호">
-                            </form>
-                            <button class="btn">로그인</button>
-                            <ul>
-                                <li><a href="">아이디찾기</a></li>
-                                <li><a href="">비밀번호찾기</a></li>
-                                <li><a href="">회원가입</a></li>
-                            </ul>
+                        <div class="tab_con">
+                            <div class="login_box on">
+                                <form action="f" id="login" method="get">
+                                    <input type="text" placeholder="아이디" name="id" required>
+                                    <input type="password" placeholder="비밀번호" name="pw" required>
+                                    <button class="btn">로그인</button>
+                                </form>
+                                <ul>
+                                    <li><a href="">아이디찾기</a></li>
+                                    <li><a href="">비밀번호찾기</a></li>
+                                    <li><a href="">회원가입</a></li>
+                                </ul>
+                            </div>
+                            <div class="public_box">
+                                <ul class="tab_sub">
+                                    <li class="on"><a href="">개인<span>(개인사업자 포함)</span></a></li>
+                                    <li><a href="">법인</a></li>
+                                </ul>
+                                <div class="tab_sub_con">
+                                    <div class="personal_business on">
+                                        <p>최초 로그인 시<br />
+                                            공동인증서 등록을 먼저 해주세요.</p>
+                                        <a href="" class="btn top_btn">공인인증서 등록</a>
+                                        <button class="btn bottom_btn">공인인증서 로그인</button>
+                                        <a href="" class="member">회원가입</a>
+                                    </div>
+                                    <div class="corporate_business">
+                                        <form action="f" id="login" method="get">
+                                            <input type="text" placeholder="법인명" name="id" required>
+                                            <input type="password" placeholder="사업자번호 " name="pw" required>
+                                            <input type="password" placeholder="법인번호 " name="pw" required>
+                                            <button class="btn">공인인증서 로그인</button>
+                                        </form>
+                                        <a href="" class="member">회원가입</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -123,7 +149,7 @@
                             <div class="txt_box">
                                 <strong>오토리스/렌터카
                                     <br />견적조회</strong>
-                                    <a href="">지금바로 견적 확인 하기</a>
+                                <a href="">지금바로 견적 확인 하기</a>
                             </div>
                         </div>
                         <div class="itm itm02">
@@ -364,10 +390,10 @@
                         <li><a href="">그룹사간 고객정보 제공내역 조회</a></li>
                     </ul>
                     <p>서울 강남구 테헤란로 127 하나금융그룹 (역삼동, 강남사옥) 사업자등록번호 220-81-09337</p>
-                    ⓒ2023. HANA CAPITAL CO., LTD. All right reserved.
+                    <P>ⓒ2023. HANA CAPITAL CO., LTD. All right reserved.</P>
                 </div>
                 <div class="footer_bottom_right">
-                    <img src="./images/logo.png" alt="">
+                    <img src="./images/footer_logo.png" alt="">
                     <div class="icon_box">
                         <a href=""><i class="xi-facebook"></i></a>
                         <a href=""><i class="xi-instagram"></i></a>
